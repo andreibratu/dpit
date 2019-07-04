@@ -1,0 +1,43 @@
+.slide {
+  height: 100%;
+  width: 100%;
+}
+
+.first-slide {
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second-slide {
+  background-color: blue;
+}
+
+.third-slide {
+  background-color: green;
+}
+
+.title {
+  color: white;
+  font-size: 3rem;
+}
+
+.cool-font {
+  font-family: 'Barriecito', cursive;
+}
+
+body {
+  margin: 0;
+}
+
+.boring-font {
+  font-family: 'Lato', sans-serif;
+}
+
+#sub-title {
+  color: white;
+  font-size: 2rem;
+  margin-top: -1rem;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>StartCool</title>
+    <link rel="stylesheet" href="https://unpkg.com/pageable@latest/dist/pageable.min.css"></link>
+    <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=B612+Mono|Oswald|Poppins|Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"></link>
+</head>
+
+<body>
+  <div id="container">
+    <div data-anchor="Page 1">
+      <div id="first-slide" class="slide d-flex flex-column justify-content-center">
+        <h1 class="startup-title align-self-center"> FUTURE IS NOW </h1>
+        <h5 id="subtitle" class="startup-subtitle align-self-center"
+            onmouseover="curious()" onmouseout="notCurious()">
+          MORE LIKE NEXT YEAR THOUGH
+        </h5>
+      </div>
+    </div>
+    <div data-anchor="Page 2">
+      <div id="second-slide" class="slide d-flex flex-column">
+        <div class="d-flex justify-content-center" style="height: 70%; width: 100%">
+          <p id="second-slide-column-one" class="mx-4 align-self-center text-column"></p>
+          <p id="second-slide-column-two" class="mx-4 align-self-center text-column"></p>
+        </div>
+        <div class="epic-quote d-flex flex-column">
+          <div class="align-self-center"> Sublim, superb, merita fiecare banut </div>
+          <div class="align-self-center my-love"> My mom </p>
+        </div>
+      </div>
+    </div>
+    <div data-anchor="Page 3">
+      <div id="third-slide" class="slide d-flex flex-column justify-content-center">
+        <div class="avatar align-self-center">
+          <img src="assets/nyan.png">
+        </div>
+        <div class="align-self-center epic-quote">
+          Sky is the limit
+        </div>
+        <button class="align-self-center btn cool-button">
+          <a href="index.html#page-1">
+            To the sky!
+          </a>
+        </button>
+      </div>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/setup.js"></script>
+</body>
+
+</html>
