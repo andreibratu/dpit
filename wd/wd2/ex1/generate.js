@@ -1,7 +1,7 @@
 function generate()
 {
   container = document.getElementById('container');
-  for(i = 0; i < 4; i++)
+  for(i = 0; i < 1000; i++)
   {
     // texty_boi = document.createElement('p')
     // texty_boi.innerText = i;

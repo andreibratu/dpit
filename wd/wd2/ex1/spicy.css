@@ -1,15 +1,18 @@
 /* TODO Make them all square */
 /* TODO align-items height auto */
 
-body {
+body, html {
   width: 100%;
   height: 100%;
 }
 
 #container {
+  height: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end; 
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; 
 }
 
 #cool {

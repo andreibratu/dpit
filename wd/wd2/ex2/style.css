@@ -1,51 +1,105 @@
-/* @media (min-width: 600px) {
-  body {
-    background-color: olive;
-  }
-} */
+html, body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
 
 body {
-  background-color: white;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.card {
-  height: 250px;
-  width: 450px;
+@media(orientation: landscape) {
+  body {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 
-  margin: 10px;
-  box-shadow: 1px 1px 1px 1px #888888;
-  border-radius: 10px;
+  .card {
+    height: 250px;
+    width: 450px;
 
-  display: flex;
-  align-items: center;
+    margin: 20px;
+    box-shadow: 1px 1px 1px 1px #888888;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .profile {
+    overflow: hidden;
+    border-radius: 120px;
+    margin-right: 30px;
+    margin-left: 10px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .function {
+    font-style: italic;
+    color: purple;
+    font-size: 1.2rem;
+  }
 }
 
-.profile {
-  overflow: hidden;
-  border-radius: 120px;
-  margin-right: 30px;
-  margin-left: 10px;
-  width: 200px;
-  height: 200px;
-}
+@media(orientation: portrait) {
+  body {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+  .card {
+    height: 250px;
+    width: 600px;
 
-.name {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
+    margin: 3px;
+    box-shadow: 1px 1px 1px 1px #888888;
+    border-radius: 10px;
 
-.function {
-  font-style: italic;
-  color: purple;
-  font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profile {
+    overflow: hidden;
+    border-radius: 120px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .function {
+    font-style: italic;
+    color: purple;
+    font-size: 1.2rem;
+  }
 }
