@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>M E M O</title>
+    <!-- My script -->
+    <script type="text/javascript" src="./cool.js"></script>
+    <!-- Bootstrap scripts -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body class="d-flex flex-row justify-content-center">
+    <div class="mt-5 d-flex card shadow-lg bg-white rounded flex-column align-items-center justify-content-center w-50">
+      <!-- Header -->
+      <h1 class="h1 mt-2">Checklist</h1>
+      <hr class="separator">
+      <!-- Search form -->
+      <div class="md-form mt-0">
+        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+      </div>
+      <!-- New Task -->
+      <form class="md-form mt-0">
+        <div class="row">
+          <div class="col">
+            <input id="username form-control" type="text" class="form-control" placeholder="First name">
+          </div>
+          <div class="col">
+            <input id="password form-control" type="text" class="form-control" placeholder="Last name">
+          </div>
+          <button type="button" class="btn">Submit</button>
+        </div>
+      </form>
+      <hr class="separator">
+      <!-- Filter buttons -->
+      <div class="d-flex flex-row mt-1 mb-1">
+        <button id="all" class="btn btn-primary m-2 btn-sm"> All </button>
+        <button id="done" class="btn btn-primary m-2 btn-sm"> Done </button>
+        <button id="not-done" class="btn btn-warning m-2 btn-sm"> Left </button>
+      </div>
+      <!-- Feed -->
+      <hr class="separator">
+      <div id="feed" class="d-flex flex-column">
+      </div>
+    </div>
+  </body>
+</html>
